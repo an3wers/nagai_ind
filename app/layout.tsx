@@ -2,7 +2,10 @@ import "./globals.css";
 import type { Metadata } from "next";
 import { Noto_Sans } from "next/font/google";
 
-const inter = Noto_Sans({ weight: ["400", "500", "700", '800', '900'], subsets: ["latin"] });
+const inter = Noto_Sans({
+  weight: ["400", "500", "700", "800", "900"],
+  subsets: ["latin"],
+});
 
 export const metadata: Metadata = {
   title: "Nagai Industries",
@@ -16,8 +19,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
+    <html className=" scroll-smooth" lang="en">
+      <body className={inter.className}>
+        {children}
+      </body>
     </html>
   );
 }

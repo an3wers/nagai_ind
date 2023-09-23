@@ -1,6 +1,6 @@
 const Team = () => {
   return (
-    <section className="my-14 md:my-20 lg:my-32">
+    <section id="team" className="my-14 md:my-20 lg:my-32">
       <h2 className=" uppercase font-medium text-4xl mb-6 tracking-widest">
         Team
       </h2>
