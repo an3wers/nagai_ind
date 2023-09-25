@@ -1,3 +1,4 @@
+import { TopLine } from "@/components/TopLine/TopLine";
 import "./globals.css";
 import type { Metadata } from "next";
 import { Noto_Sans } from "next/font/google";
@@ -21,6 +22,7 @@ export default function RootLayout({
   return (
     <html className=" scroll-smooth" lang="en">
       <body className={inter.className}>
+          <TopLine />
         {children}
       </body>
     </html>
