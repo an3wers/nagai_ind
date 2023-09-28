@@ -28,8 +28,18 @@ const TopLine = () => {
   return screenWidth < 768 ? (
     <>
       <Headroom disableInlineStyles>
-        <div className=" flex justify-center h-10 border-b border-gray-700 bg-black">
-          <button onClick={toTopHandler}>Top</button>
+        <div className=" flex justify-center h-12 border-b border-gray-700 bg-black">
+          <button onClick={toTopHandler}>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24"
+              viewBox="0 -960 960 960"
+              width="24"
+              fill="#FFFFFF"
+            >
+              <path d="M440-160v-487L216-423l-56-57 320-320 320 320-56 57-224-224v487h-80Z" />
+            </svg>
+          </button>
         </div>
       </Headroom>
     </>

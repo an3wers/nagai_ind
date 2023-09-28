@@ -8,6 +8,7 @@ const inter = Noto_Sans({
   subsets: ["latin"],
 });
 
+
 export const metadata: Metadata = {
   title: "Nagai Industries",
   description:
@@ -20,9 +21,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html className=" scroll-smooth" lang="en">
+    <html className="scroll-smooth" lang="en">
       <body className={inter.className}>
-          <TopLine />
+        <TopLine />
         {children}
       </body>
     </html>
