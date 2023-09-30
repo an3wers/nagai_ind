@@ -22,8 +22,8 @@ const AppNavigation = () => {
   }
 
   return (
-    <nav className="absolute md:fixed z-20 top-6 right-6">
-      <ul className="flex flex-col md:flex-row gap-6 justify-end">
+    <nav className="absolute md:sticky z-20 top-14 right-6">
+      <ul className="flex flex-col md:flex-row gap-4 md:gap-6 justify-end">
         <li>
           <Link href="#" onClick={(e: any) => handler(e, "#studio")}>
             Studio

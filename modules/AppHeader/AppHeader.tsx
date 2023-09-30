@@ -2,14 +2,15 @@ import Image from "next/image";
 
 const AppHeader = () => {
   return (
-    <header className="grid grid-cols-1 md:grid-cols-[300px_1fr] gap-0">
-      <div className="flex justify-start pr-28 md:pr-2">
+    <header className="grid grid-cols-1 md:grid-cols-[250px_1fr]  gap-0">
+      <div className="flex justify-start min-h-[240px] pr-28 md:pr-2">
         <Image
-          src={"/nagai_logo_v1.jpg"}
-          width={300}
-          height={300}
+          src={"/nagai_logo.png"}
+          width={250}
+          height={250}
           alt="Logo Nagai Industries"
           quality={100}
+          className="object-contain"
         />
       </div>
       <div className="flex items-center justify-start md:justify-end py-6">

@@ -8,7 +8,7 @@ import { Team } from "@/modules/Team/Team";
 
 export default function Home() {
   return (
-    <main className=" container relative">
+    <main className="container relative">
       <AppNavigation />
       <AppHeader />
       <About />
